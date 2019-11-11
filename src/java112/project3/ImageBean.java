@@ -1,5 +1,7 @@
 package java112.project3;
 
+import java.nio.file.*;
+
 /**
  * This JavaBean represents an image for Team Ada's guessing game web application.
  *
@@ -23,7 +25,7 @@ public class ImageBean {
         return imageName;
     }
 
-    public String getFilePath() {
+    public Path getFilePath() {
         return filePath;
     }
 
