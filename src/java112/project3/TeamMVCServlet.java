@@ -11,7 +11,18 @@ import javax.servlet.annotation.*;
 )
 
 public class TeamMVCServlet extends HttpServlet {
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void init() {
+        ImageBean imageBean = new ImageBean();
+    }
 
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // randomize the image
+        // send bean with randomized image path to the view
+    }
+
+    public void doPost(HttpServletRequest request, HttpServletResponse response) {
+        // Checks the answer against the image in the bean
+        // Send a something back to the view (a boolean?) to say whether or not the guess was correct.
+        // TODO decide where to put answer checking logic -- in the image bean or a new bean? Business logic class?
     }
 }
