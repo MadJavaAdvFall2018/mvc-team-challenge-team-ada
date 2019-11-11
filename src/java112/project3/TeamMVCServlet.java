@@ -6,8 +6,8 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 @WebServlet(
-        name = "mvcDemo",
-        urlPatterns = { "/mvc-demo" }
+        name = "teamMVCServlet",
+        urlPatterns = { "/teamMVC" }
 )
 
 public class TeamMVCServlet extends HttpServlet {
