@@ -1,3 +1,5 @@
+package java112.project3;
+
 /**
  * This JavaBean represents an image for Team Ada's guessing game web application.
  *
@@ -8,7 +10,7 @@ public class ImageBean {
 
     private String imageName;
     private Path filePath;
-    
+
 
     /**
      * Constructor for the ImageBean object

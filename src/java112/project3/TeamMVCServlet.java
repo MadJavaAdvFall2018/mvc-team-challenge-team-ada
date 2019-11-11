@@ -12,6 +12,6 @@ import javax.servlet.annotation.*;
 
 public class TeamMVCServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+    
     }
 }
