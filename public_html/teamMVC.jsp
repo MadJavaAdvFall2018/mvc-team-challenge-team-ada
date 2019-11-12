@@ -8,22 +8,12 @@
     <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <header>
-      <h1></h1>
-    </header>
-    <header id="header">
-        <a href="index.html" class="logo">Team MVC Challenge</a>
-        <nav>
-            <a href="#menu">Menu</a>
-        </nav>
-    </header>
-
 
 
     <div id="container">
     <div id="header">
     <h1>
-      Guess the Picture
+      Team MVC Challenge - Guess the Picture
     </h1>
     </div>
     <div id="sub_header">
@@ -33,17 +23,17 @@
     <div id="main_content">
     <div class="content">
       <h2>
-        Simple Beauty H2 SubTitle
+        Let's Play!
       </h2>
       <p>
-        This site design is open source, so feel free to use it as you want, but you must keep
-        the link "Design by Pikanai.com" live on the design. Enjoy!
+        Click to uncover one piece of the puzzle at a time. Try to identify
+        the picture with as few clicks as possible.
       </p>
 
       <div class="image-frame-container">
           <div class="image-frame" >
               <img src="images/ada_lovelace_300.jpg" alt="A obscured mystery image"  />
-              <%-- <img src="${ourImageBean.filePath}" alt="A obscured mystery image" /> --%>
+              <!-- <img src="${ourImageBean.filePath}" alt="A obscured mystery image" /> -->
           </div>
           <div class="mask" id="mask1">
           </div>
@@ -59,6 +49,20 @@
           </div>
 
       </div>
+
+      <br><br>
+      <h2>
+        H2 SubTitle #2
+      </h2>
+      <p>
+        Aenean eu lorem at odio placerat fringilla. Cras faucibus velit quis dui. Proin
+        scelerisque orci nec arcu. Pellentesque cursus. Vestibulum ante ipsum primis in
+        faucibus orci luctus et ultrices posuere cubilia Curae; Nullam mattis iaculis purus.
+        Curabitur velit. Vivamus et diam pharetra elit auctor molestie. Suspendisse potenti.
+        Praesent enim. Vivamus at magna. Ut et dolor eu erat facilisis sollicitudin. Duis sed
+        ante. Suspendisse lorem. Suspendisse mollis, dolor sit amet pellentesque sodales, diam
+        risus adipiscing diam, vel ornare lorem pede ac ipsum.
+      </p>
     </div>
     <div class="menu">
       <div class="menu_title">
@@ -66,31 +70,14 @@
       </div>
       <ul>
         <li>
-          <a href="#" class="menu_link">About me</a>
+          <a href="#" class="menu_link">Home</a>
         </li>
         <li>
-          <a href="#" class="menu_link">Contact me</a>
+          <a href="#" class="menu_link">Application Diagram</a>
         </li>
       </ul>
-      <div class="menu_title">
-        Sub menu
-      </div>
-      <ul>
-        <li>
-          <a href="http://www.pikanai.com" class="menu_link">Pikanai</a>
-        </li>
-      </ul>
-      <div class="menu_title">
-        Friends
-      </div>
-      <ul>
-        <li>
-          <a href="http://www.oswd.org" class="menu_link">OSWD</a>
-        </li>
-        <li>
-          <a href="http://www.opendesigns.org" class="menu_link">Open Designs</a>
-        </li>
-      </ul>
+
+
     </div>
     <div id="clear"></div>
     </div>
