@@ -17,6 +17,7 @@ public class TeamMVCServlet extends HttpServlet {
         imageBean = new ImageBean();
     }
 
+    // Random number generation: https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ImageGameEngine gameEngine = new ImageGameEngine();
 
