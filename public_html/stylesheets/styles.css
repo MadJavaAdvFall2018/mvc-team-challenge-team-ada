@@ -1,0 +1,63 @@
+.image-frame-container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.image-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mask {
+    position: absolute;
+}
+
+#mask1 {
+    top: 50px;
+    left: 0;
+    background-color: red;
+    width:300px;
+    height: 50px;
+}
+
+#mask2 {
+    top: 0px;
+    left: 50;
+    background-color: blue;
+    width:150px;
+    height: 50px;
+}
+
+#mask3 {
+    top: 100px;
+    left: 150px;
+    background-color: yellow;
+    width:100px;
+    height: 200px;
+}
+
+#mask4 {
+    top: 100px;
+    left: 100px;
+    background-color: green;
+    width:50px;
+    height: 150px;
+}
+
+#mask5 {
+    top: 200px;
+    left: 0;
+    background-color: orange;
+    width: 125px;
+    height: 100px;
+}
+
+#mask6 {
+    top: 100px;
+    left: 0;
+    background-color: purple;
+    width: 100px;
+    height: 50px;
+}
