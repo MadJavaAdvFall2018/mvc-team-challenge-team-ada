@@ -12,15 +12,15 @@ import javax.servlet.annotation.*;
 
 public class TeamMVCServlet extends HttpServlet {
     private ImageBean imageBean;
+    private ImageGameEngine gameEngine;
 
     public void init() {
         imageBean = new ImageBean();
+        gameEngine = new ImageGameEngine();
     }
 
     // Random number generation: https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        ImageGameEngine gameEngine = new ImageGameEngine();
-
         String imageName = gameEngine.getRandomImageName();
         imageBean.setImageName(imageName);
 
@@ -33,8 +33,6 @@ public class TeamMVCServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        // Checks the answer against the image in the bean
-        // Send a something back to the view (a boolean?) to say whether or not the guess was correct.
-        // TODO decide where to put answer checking logic -- in the image bean or a new bean? Business logic class?
+
     }
 }
