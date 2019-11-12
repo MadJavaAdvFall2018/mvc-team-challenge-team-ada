@@ -46,8 +46,8 @@
 
       <div class="image-frame-container">
           <div class="image-frame" >
-              <img src="images/ada_lovelace_300.jpg" alt="A obscured mystery image"  />
-              <!-- <img src="${ourImageBean.filePath}" alt="A obscured mystery image" /> -->
+<%--              <img src="images/ada_lovelace_300.jpg" alt="A obscured mystery image"  />--%>
+              <img src="images/${imageBean.imageName}" alt="A obscured mystery image" />
           </div>
           <div class="mask" id="mask1">
           </div>
