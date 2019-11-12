@@ -21,9 +21,6 @@ public class TeamMVCServlet extends HttpServlet {
 
 
 
-
-
-
         String url = "/teamMVC.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
