@@ -70,7 +70,7 @@
       <h2>
         Enter your guess.
       </h2>
-      <input type="text" placeholder="This is a picture of..." />
+      <input type="text" name ="user_guess" placeholder="This is a picture of..." />
       <input type="button" class="button" value="Remove a piece"
              onclick="hideMask()">
     </div>
