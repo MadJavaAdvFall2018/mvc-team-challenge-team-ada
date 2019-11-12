@@ -20,21 +20,27 @@ public class TeamMVCServlet extends HttpServlet {
     }
 
     // Random number generation: https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
         String imageName = gameEngine.getRandomImageName();
         imageBean.setImageName(imageName);
 
         request.setAttribute("imageBean", imageBean);
+    }
 
+    public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        String userGuess = request.getParameter("userGuess");
+        boolean guessCorrect = gameEngine.checkGuess(imageBean, userGuess);
+
+        request.setAttribute("imageBean", imageBean);
+        request.setAttribute("guessCorrect", guessCorrect);
+
+        dispatchRequest(request, response);
+    }
+
+    private void dispatchRequest(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String url = "/teamMVC.jsp";
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
-    }
-
-    public void doPost(HttpServletRequest request, HttpServletResponse response) {
-        // How do we access post data from the request?
-        String userGuess = request.getParameter("userGuess");
-        boolean guessCorrect = gameEngine.checkGuess(imageBean, userGuess);
     }
 }
