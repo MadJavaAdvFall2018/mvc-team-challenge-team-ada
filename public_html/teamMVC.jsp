@@ -76,7 +76,7 @@
              onclick="hideMask()">
     </div>
 
-    <%-- <%@ include file="menu.jsp"%> --%>
+    <!-- <%@ include file="menu.jsp"%> -->
     <div class="menu">
       <div class="menu_title">
         Main menu
