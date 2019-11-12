@@ -3,20 +3,31 @@ package java112.project3;
 import java.util.*;
 
 public class ImageGameEngine {
-    private List<String> imagePaths;
+    private List<String> imageNames;
+    private Random random;
 
     public ImageGameEngine() {
-        String path = "";
-        imagePaths = new ArrayList<>();
-        imagePaths.add(path);
+        random = new Random();
+        String adaLovelaceImageName = "ada_lovelace_300.jpg";
+        String masterChiefImageName = "master_chief_300.jpg";
+        String monaLisaImageName = "mona_lisa_300.png";
+        imageNames = new ArrayList<>();
+        imageNames.add(adaLovelaceImageName);
+        imageNames.add(masterChiefImageName);
+        imageNames.add(monaLisaImageName);
     }
 
-    public String getRandomImagePath() {
-        // Pick one of the available Paths at random (pseudo-random?)
-        return "";
+    public String getRandomImageName() {
+        Random random;
+        int randomNumber = generateRandomNumber(0,2);
+        return imageNames.get(randomNumber);
     }
 
     public boolean checkGuess(ImageBean imageBean, String guess) {
         return imageBean.getImageName().equals(guess);
+    }
+
+    private int generateRandomNumber(int min, int max) {
+        return random.nextInt((max-min)+1) + min;
     }
 }
