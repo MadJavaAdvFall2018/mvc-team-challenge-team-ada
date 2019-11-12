@@ -11,18 +11,19 @@ import javax.servlet.annotation.*;
 )
 
 public class TeamMVCServlet extends HttpServlet {
+    private ImageBean imageBean;
+
     public void init() {
-        ImageBean imageBean = new ImageBean();
+        imageBean = new ImageBean();
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        // randomize the image
-        // send bean with randomized image path to the view
+        ImageGameEngine gameEngine = new ImageGameEngine();
 
+        String imageName = gameEngine.getRandomImageName();
+        imageBean.setImageName(imageName);
 
-
-
-
+        request.setAttribute("imageBean", imageBean);
 
         String url = "/teamMVC.jsp";
 
