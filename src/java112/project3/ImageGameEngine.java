@@ -8,7 +8,7 @@ public class ImageGameEngine {
 
     public ImageGameEngine() {
         random = new Random();
-        String adaLovelaceImageName = "ada_lovelace_300.png";
+        String adaLovelaceImageName = "ada_lovelace_300.jpg";
         String masterChiefImageName = "master_chief_300.jpg";
         String monaLisaImageName = "mona_lisa_300.png";
         imageNames = new ArrayList<>();
