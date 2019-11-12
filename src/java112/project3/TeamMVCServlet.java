@@ -33,6 +33,8 @@ public class TeamMVCServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) {
-
+        // How do we access post data from the request?
+        String userGuess = request.getParameter("userGuess");
+        boolean guessCorrect = gameEngine.checkGuess(imageBean, userGuess);
     }
 }
