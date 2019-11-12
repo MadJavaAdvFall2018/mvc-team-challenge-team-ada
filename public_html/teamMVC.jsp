@@ -32,7 +32,7 @@
 
       <div class="image-frame-container">
           <div class="image-frame" >
-              <img src="images/ada_lovelace_300.jpg" alt="A obscured mystery image"  />
+              <img src="images/master_chief_300.jpg" alt="A obscured mystery image"  />
               <!-- <img src="${ourImageBean.filePath}" alt="A obscured mystery image" /> -->
           </div>
           <div class="mask" id="mask1">
@@ -47,22 +47,16 @@
           </div>
           <div class="mask" id="mask6">
           </div>
+          <div class="mask" id="mask7">
+          </div>
 
       </div>
 
       <br><br>
       <h2>
-        H2 SubTitle #2
+        Enter your guess.
       </h2>
-      <p>
-        Aenean eu lorem at odio placerat fringilla. Cras faucibus velit quis dui. Proin
-        scelerisque orci nec arcu. Pellentesque cursus. Vestibulum ante ipsum primis in
-        faucibus orci luctus et ultrices posuere cubilia Curae; Nullam mattis iaculis purus.
-        Curabitur velit. Vivamus et diam pharetra elit auctor molestie. Suspendisse potenti.
-        Praesent enim. Vivamus at magna. Ut et dolor eu erat facilisis sollicitudin. Duis sed
-        ante. Suspendisse lorem. Suspendisse mollis, dolor sit amet pellentesque sodales, diam
-        risus adipiscing diam, vel ornare lorem pede ac ipsum.
-      </p>
+      <input type="text" placeholder="This is a picture of..." />
     </div>
     <div class="menu">
       <div class="menu_title">
@@ -83,7 +77,7 @@
     </div>
     <div id="main_content_bottom"></div>
     <div id="footer">
-    <strong>Copyright © 2007</strong> | <a href="#">Your Site</a> | <b>Design by</b> <a href=
+    <strong>Copyright © 2019</strong> | Team MVC | <b>Design by</b> <a href=
     "http://www.pikanai.com">Pikanai.com</a>
     </div>
     </div>
