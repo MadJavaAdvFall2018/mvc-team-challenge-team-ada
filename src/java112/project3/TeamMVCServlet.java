@@ -28,7 +28,7 @@ public class TeamMVCServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-        String userGuess = request.getParameter("userGuess");
+        String userGuess = request.getParameter("user_guess");
         boolean guessCorrect = gameEngine.checkGuess(imageBean, userGuess);
 
         request.setAttribute("imageBean", imageBean);
