@@ -13,7 +13,6 @@
    <meta charset="utf-8" />
    <link href="stylesheets/style.css" rel="stylesheet" type="text/css">
    <link href="stylesheets/styles.css" rel="stylesheet" type="text/css">
-   <script src="gameScript.js"></script>
 
  </head>
 
@@ -47,7 +46,7 @@
 
       <div class="image-frame-container">
           <div class="image-frame" >
-              <img src="images/master_chief_300.jpg" alt="A obscured mystery image"  />
+              <img src="images/ada_lovelace_300.jpg" alt="A obscured mystery image"  />
               <!-- <img src="${ourImageBean.filePath}" alt="A obscured mystery image" /> -->
           </div>
           <div class="mask" id="mask1">
@@ -103,6 +102,8 @@
     "http://www.pikanai.com">Pikanai.com</a>
     </div>
 </div>
+
+<script src="gameScript.js"></script>
 
 
 </body>
