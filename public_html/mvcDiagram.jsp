@@ -4,7 +4,7 @@
 
 <!-- <jsp:include page="head.jsp">
     <jsp:param name="title" value="Team MVC Challenge - Guess the Picture" />
-</jsp:include> -->
+</jsp:include>  -->
 
 <!-- <%@ include file="head.jsp"%> -->
 
@@ -36,7 +36,7 @@
     <div id="main_content">
     <div class="content">
 
-     <img src="images/diagram.jpg" alt="diagram of web app architecture">
+     <img src="images/diagram.png" alt="diagram of web app architecture">
 
 
 

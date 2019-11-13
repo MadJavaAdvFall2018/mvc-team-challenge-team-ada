@@ -1,3 +1,6 @@
+/* Get all masks, and choose one at random. If it is not currently hidden,
+   hide it.
+ */
 function hideMask() {
     let masks = document.querySelectorAll(".mask");
 
@@ -12,6 +15,10 @@ function hideMask() {
     }
 }
 
+/* Check to see if the guess is equivalent to the image name. If so, remove all
+    masks and return success message. If not, return incorrect guess message and
+    hide another mask.
+ */
 function checkGuess() {
     let userGuess = document.getElementById("user_guess").value.toLowerCase();
     let imageName = document.getElementById("image_name").value;
@@ -32,6 +39,7 @@ function checkGuess() {
     }
 }
 
+// Hide all masks.
 function removeAllMasks() {
     let masks = document.querySelectorAll(".mask");
 
