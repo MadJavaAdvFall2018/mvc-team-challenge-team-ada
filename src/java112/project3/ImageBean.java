@@ -11,7 +11,7 @@ import java.nio.file.*;
 public class ImageBean {
 
     private String imageName;
-    private Path filePath;
+    private String filePath;
 
 
     /**
@@ -25,11 +25,11 @@ public class ImageBean {
         return imageName;
     }
 
-    public Path getFilePath() {
+    public String getFilePath() {
         return filePath;
     }
 
-    public void setFilePath(Path filePath) {
+    public void setFilePath(String filePath) {
         this.filePath = filePath;
     }
 
