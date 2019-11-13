@@ -20,11 +20,13 @@ public class TeamMVCServlet extends HttpServlet {
     }
 
     // Random number generation: https://stackoverflow.com/questions/363681/how-do-i-generate-random-integers-within-a-specific-range-in-java
-    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
         String imageName = gameEngine.getRandomImageName();
         imageBean.setImageName(imageName);
 
         request.setAttribute("imageBean", imageBean);
+
+        dispatchRequest(request, response);
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
