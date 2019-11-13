@@ -70,9 +70,14 @@
       <h2>
         Enter your guess.
       </h2>
+      <form method="post" action="/java112/teamMVC">
+      <input type="hidden" value="${imageBean.filePath}" name="image_file_name"/>
+      <input type="hidden" value="${imageBean.imageName}" name="image_name"/>
       <input type="text" name ="user_guess" placeholder="This is a picture of..." />
       <input type="button" class="button" value="Remove a piece"
              onclick="hideMask()">
+      </form>
+      <h1>${guessCorrect}</h1>
     </div>
 
     <!-- <%@ include file="menu.jsp"%> -->
