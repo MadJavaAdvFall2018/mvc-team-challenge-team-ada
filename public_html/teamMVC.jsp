@@ -85,7 +85,7 @@
           <a href="#" class="menu_link">Home</a>
         </li>
         <li>
-          <a href="#" class="menu_link">Application Diagram</a>
+          <a href="mvcDiagram.jsp" class="menu_link">Application Diagram</a>
         </li>
       </ul>
 
